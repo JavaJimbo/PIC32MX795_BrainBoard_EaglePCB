@@ -13788,8 +13788,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="JimLib" deviceset="RESISTOR" device="0207/12" value="120 ohm"/>
-<part name="LED1" library="JimLib" deviceset="LED" device="5MM"/>
+<part name="R1" library="JimLib" deviceset="RESISTOR" device="0207/12" value="220 ohm"/>
+<part name="LED1" library="JimLib" deviceset="LED" device="5MM" value="RED"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="C1" library="JimLib" deviceset="CAP-1206" device="" value="0.1 uF"/>
@@ -13809,7 +13809,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C16" library="JimLib" deviceset="POLCAP" device="E2.5-5" value="10 uF"/>
 <part name="C14" library="JimLib" deviceset="POLCAP" device="E2.5-5" value="10 uF"/>
 <part name="U1" library="JimLib" deviceset="REGULATOR_LD1086_LDO" device=""/>
-<part name="D1" library="JimLib" deviceset="1N581*" device="" technology="7-B"/>
+<part name="D1" library="JimLib" deviceset="1N581*" device="" technology="7-B" value="40V"/>
 <part name="U2" library="JimLib" deviceset="SD_CARD" device=""/>
 <part name="J8" library="JimLib" deviceset="POWER_JACK" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -13843,7 +13843,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
@@ -13851,7 +13850,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
-<part name="D2" library="JimLib" deviceset="1N581*" device="" technology="7-B"/>
+<part name="D2" library="JimLib" deviceset="1N581*" device="" technology="7-B" value="40V"/>
 <part name="U5" library="JimLib" deviceset="EEPROM_24LC256" device="" value="24LC256"/>
 <part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
@@ -13865,8 +13864,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C20" library="JimLib" deviceset="C" device="5/2.5" value="0.1 uF"/>
 <part name="J13" library="JimLib" deviceset="MOLEX-2P-156" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
-<part name="LED2" library="JimLib" deviceset="LED" device="5MM"/>
-<part name="R3" library="JimLib" deviceset="RESISTOR" device="0207/12" value="120 ohm"/>
+<part name="LED2" library="JimLib" deviceset="LED" device="5MM" value="YELLOW"/>
+<part name="R3" library="JimLib" deviceset="RESISTOR" device="0207/12" value="220 ohm"/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="TEST_OUT" library="JimLib" deviceset="TP" device=""/>
 <part name="GND" library="JimLib" deviceset="TP" device=""/>
@@ -13881,7 +13880,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="165.1" y="-45.72" size="1.778" layer="94">2.0</text>
+<text x="166.37" y="-46.99" size="3.81" layer="94">2</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-378.46" y="-53.34"/>
@@ -13971,7 +13970,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND25" gate="1" x="-177.8" y="158.75" rot="R90"/>
 <instance part="+3V18" gate="G$1" x="-104.14" y="77.47"/>
 <instance part="GND3" gate="1" x="-229.87" y="171.45"/>
-<instance part="GND30" gate="1" x="-224.79" y="129.54"/>
 <instance part="+3V19" gate="G$1" x="13.97" y="177.8"/>
 <instance part="+3V20" gate="G$1" x="-24.13" y="168.91" rot="R90"/>
 <instance part="GND26" gate="1" x="16.51" y="162.56"/>
@@ -14491,7 +14489,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U3" gate="G$1" pin="T3CK/RC2"/>
 </segment>
 </net>
-<net name="!SD_CS" class="0">
+<net name="T5CK" class="0">
 <segment>
 <wire x1="-154.94" y1="175.26" x2="-189.23" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="10"/>
@@ -15012,6 +15010,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-275.59" y1="300.99" x2="-269.24" y2="300.99" width="0.1524" layer="91"/>
 <wire x1="-285.75" y1="290.83" x2="-275.59" y2="290.83" width="0.1524" layer="91"/>
 <wire x1="-275.59" y1="290.83" x2="-275.59" y2="300.99" width="0.1524" layer="91"/>
+<junction x="-275.59" y="300.99"/>
 </segment>
 </net>
 <net name="SD_MOSI" class="0">
@@ -15441,17 +15440,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-229.87" y1="176.53" x2="-229.87" y2="173.99" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="25"/>
-<wire x1="-209.55" y1="146.05" x2="-224.79" y2="146.05" width="0.1524" layer="91"/>
-<wire x1="-224.79" y1="146.05" x2="-224.79" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="GND30" gate="1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="26"/>
-<wire x1="-194.31" y1="146.05" x2="-194.31" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="-194.31" y1="139.7" x2="-224.79" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="-224.79" y1="139.7" x2="-224.79" y2="132.08" width="0.1524" layer="91"/>
-<junction x="-224.79" y="139.7"/>
-</segment>
-<segment>
 <pinref part="H1" gate="G$1" pin="MOUNT"/>
 <wire x1="-234.95" y1="109.22" x2="-238.76" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-238.76" y1="109.22" x2="-238.76" y2="101.6" width="0.1524" layer="91"/>
@@ -15667,7 +15655,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="113,1,-109.025,261.62,J4,,,,,"/>
 <approved hash="113,1,-201.93,162.755,J1,,,,,"/>
 <approved hash="113,1,-103.065,60.96,J2,,,,,"/>
-<approved hash="113,1,-198.12,280.992,LED1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
